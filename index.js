@@ -18,17 +18,17 @@ const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Jul
 const bulan = arrayBulan[moment().format('MM') - 1]
 
 const config = {
-    A187: '👾AR15BOT👾',
-    instagram: 'https://instagram.com/_sadboy.ig',
-    nomer: 'wa.me/6285722553839',
-    aktif: '24 JAM',
-    youtube: 'https://youtube.com/channel/UCGYLWtyT9IADYNUiK0uZiGg',
-    whatsapp: 'https://chat.whatsapp.com/DSSHmG2KjKJLoFp9B9mkVs',
+    A187: '*RIZKY BOT*',
+    instagram: 'https://instagram.com/_rizkyfadilah8',
+    nomer: 'wa.me/6282387804410',
+    aktif: 'Tergantung Owner ON',
+    youtube: 'Ga Punya Makasi.',
+    whatsapp: 'https://chat.whatsapp.com/FROF0hmWUuwD4WKgcyIEH9',
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
     waktu: time
 }
 
-const { A187, tanggal, waktu, instagram, whatsapp, youtube, nomer, aktif, ontime } = config
+const { Rzky, tanggal, waktu, instagram, whatsapp, youtube, nomer, aktif, ontime } = config
 
 const
 {
@@ -148,27 +148,27 @@ client.on('message-new', async (m) => {
 
    switch (prefix) {
        case 'help':
-           client.sendMessage(id, help.help(id, A187, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
+           client.sendMessage(id, help.help(id, Rzky, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
            break
        case 'menu1':
-           client.sendMessage(id, menu1.menu1(id, A187, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
+           client.sendMessage(id, menu1.menu1(id, Rzky, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
            break
        case 'menu2':
-           client.sendMessage(id, menu2.menu2(id, A187, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
+           client.sendMessage(id, menu2.menu2(id, Rzky, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
            break
        case 'menu3':
-           client.sendMessage(id, menu3.menu3(id, A187, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
+           client.sendMessage(id, menu3.menu3(id, Rzky, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
            break
       case 'donate':
-           client.sendMessage(id, donate.donate(id, A187, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
+           client.sendMessage(id, donate.donate(id, Rzky, tanggal, waktu, whatsapp, youtube, instagram, aktif, nomer, ontime), MessageType.text)
            break          
       case 'info':
-           client.sendMessage(id, info.info(id, A187, tanggal, waktu, whatsapp, youtube, instagram,aktif, nomer, ontime), MessageType.text)
+           client.sendMessage(id, info.info(id, Rzky, tanggal, waktu, whatsapp, youtube, instagram,aktif, nomer, ontime), MessageType.text)
            break             
        case 'nulis':
            nulis(value)
                .then(data => {
-                   client.sendMessage(id, '[❗] WAIT BOSQ🖤', MessageType.text)
+                   client.sendMessage(id, '[❗] WAIT Sayang🖤', MessageType.text)
                    client.sendMessage(id, data, MessageType.image)
                })
                .catch(err => {
@@ -183,7 +183,7 @@ client.on('message-new', async (m) => {
                .then(data => {
                    const { judul, size, hasil: link } = data
                    let hasil = `✅ Lagu Berhasil Di Download, silahkan klik link dan download hasilnya\nKlik link dibawah🗡️\n\nJudul: ${judul}\n\nUkuran audio: ${size}\n\nLink: ${link}`
-                   client.sendMessage(id, '[❗] WAIT BOSQ🖤', MessageType.text)
+                   client.sendMessage(id, '[❗] WAIT Sayang🖤', MessageType.text)
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -195,7 +195,7 @@ client.on('message-new', async (m) => {
                .then(data => {
                    const { judul, size, hasil: link } = data
                    let hasil = `✅ Video Berhasil Di Download, silahkan klik link dan download hasilnya\nKlik link dibawah🗡️\n\nJudul: ${judul}\n\nUkuran audio: ${size}\n\nLink: ${link}`
-                   client.sendMessage(id, '[❗] WAIT BOSQ🖤', MessageType.text)
+                   client.sendMessage(id, '[❗] WAIT Sayang🖤', MessageType.text)
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -207,7 +207,7 @@ client.on('message-new', async (m) => {
                .then(data => {
                     const { size, hasil: link } = data
                     let hasil = `✅ Berhasil! silahkan klik link di bawah untuk mendownload hasilnya!\nKlik link dibawah🗡️\n\nSize: ${size}\n\nLink: ${link}`
-                    client.sendMessage(id, '[❗] WAIT BOSQ🖤', MessageType.text)
+                    client.sendMessage(id, '[❗] WAIT Sayang🖤', MessageType.text)
                     client.sendMessage(id, hasil ,MessageType.text)
                })
                .catch(err => {
@@ -324,7 +324,7 @@ client.on('message-new', async (m) => {
                case 'cewek':
                    cewePict()
                        .then(buffer => {
-                           client.sendMessage(id, '[❗] WAIT BOSQ🖤', MessageType.text)
+                           client.sendMessage(id, '[❗] WAIT Sayang🖤', MessageType.text)
                            client.sendMessage(id, buffer, MessageType.image)
                        })
                        .catch(err => {
@@ -334,7 +334,7 @@ client.on('message-new', async (m) => {
                case 'cowok':
                    cowoPict()
                        .then(buffer => {
-                           client.sendMessage(id, '[❗] WAIT BOSQ🖤', MessageType.text)
+                           client.sendMessage(id, '[❗] WAIT Sayang🖤', MessageType.text)
                            client.sendMessage(id, buffer, MessageType.image)
                        })
                        .catch(err => {
@@ -349,7 +349,7 @@ client.on('message-new', async (m) => {
        case 'animepict':
            animPict()
                .then(buffer => {
-                   client.sendMessage(id, '[❗] WAIT BOSQ🖤', MessageType.text)
+                   client.sendMessage(id, '[❗] WAIT Sayang🖤', MessageType.text)
                    client.sendMessage(id, buffer, MessageType.image)
                })
                .catch(err => {
@@ -586,7 +586,7 @@ case 'gay':
            indohot()
                .then(data => {
                    const { judul, genre, durasi, url } = data
-                   let hasil = `Tobat GOBLOK😙* \n\n *Judul* _${judul}_ \n\n *Status* _${genre}_ \n\n *Durasi* _${durasi}_ \n\n *Link Bosq* _${url}_  `
+                   let hasil = `Sayang ga boleh sini aku aja Sepongin:(* \n\n *Judul* _${judul}_ \n\n *Status* _${genre}_ \n\n *Durasi* _${durasi}_ \n\n *Link Bosq* _${url}_  `
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -673,7 +673,7 @@ case 'filmanime':
            case 'map':
            map()
                .then(buffer => {
-                   client.sendMessage(id, '[❗] WAIT BOSQ🖤', MessageType.text)
+                   client.sendMessage(id, '[❗] WAIT Sayang🖤', MessageType.text)
                    client.sendMessage(id, buffer, MessageType.image)
                })
                .catch(err => {
@@ -683,7 +683,7 @@ case 'filmanime':
            case 'waifu':
            waifu()
                .then(buffer => {
-                   client.sendMessage(id, '[❗] WAIT BOSQ🖤', MessageType.text)
+                   client.sendMessage(id, '[❗] WAIT Sayang🖤', MessageType.text)
                    client.sendMessage(id, buffer, MessageType.image)
                })
                .catch(err => {
@@ -693,7 +693,7 @@ case 'filmanime':
       case 'loli':
            loli()
                .then(buffer => {
-                   client.sendMessage(id, '[❗] WAIT BOSQ🖤', MessageType.text)
+                   client.sendMessage(id, '[❗] WAIT Sayang🖤', MessageType.text)
                    client.sendMessage(id, buffer, MessageType.image)
                })
                .catch(err => {
@@ -703,7 +703,7 @@ case 'filmanime':
            case 'ssweb':
            ssweb()
                .then(buffer => {
-                   client.sendMessage(id, '[❗] WAIT BOSQ🖤', MessageType.text)
+                   client.sendMessage(id, '[❗] WAIT Sayang🖤', MessageType.text)
                    client.sendMessage(id, buffer, MessageType.image)
                })
                .catch(err => {
@@ -713,7 +713,7 @@ case 'filmanime':
      case 'cooltext':
            cooltext()
                .then(buffer => {
-                   client.sendMessage(id, '[❗] WAIT BOSQ🖤', MessageType.text)
+                   client.sendMessage(id, '[❗] WAIT Sayang🖤', MessageType.text)
                    client.sendMessage(id, buffer, MessageType.image)
                })
                .catch(err => {
@@ -723,7 +723,7 @@ case 'filmanime':
            case 'ttp':
            ttp()
                .then(buffer => {
-                   client.sendMessage(id, '[❗] WAIT BOSQ🖤', MessageType.text)
+                   client.sendMessage(id, '[❗] WAIT Sayang🖤', MessageType.text)
                    client.sendMessage(id, buffer, MessageType.image)
                })
                .catch(err => {
@@ -733,7 +733,7 @@ case 'filmanime':
            case 'nekonime':
            nekonime()
                .then(buffer => {
-                   client.sendMessage(id, '[❗] WAIT BOSQ🖤', MessageType.text)
+                   client.sendMessage(id, '[❗] WAIT Sayang🖤', MessageType.text)
                    client.sendMessage(id, buffer, MessageType.image)
                })
                .catch(err => {
@@ -743,7 +743,7 @@ case 'filmanime':
            case 'ytmp3':
            mp3()
                .then(buffer => {
-                   client.sendMessage(id, '[❗] WAIT BOSQ🖤', MessageType.text)
+                   client.sendMessage(id, '[❗] WAIT Sayang🖤', MessageType.text)
                    client.sendMessage(id, buffer, MessageType.image)
                })
                .catch(err => {
